@@ -1,0 +1,134 @@
+
+body{
+    --GeaColor:#006AB3;
+    --GeiiColor:#009EE0;
+    --GmpColor:#009790;
+    --Mt2eColor:#009036;
+    --InfoColor:#96BF0D;
+    --QlioColor:#DDCF1B;
+    --SgmColor:#F29400;
+    --back-menu:#999A9D;
+    
+    
+}
+
+header{
+    margin-top: -10px;
+    margin-left: -10px;
+
+    display: grid;
+    grid-template-columns: repeat(9,2fr);
+    column-gap: 20px;
+    background-color: var(--back-menu);
+}
+
+.Button{
+    margin-top: 20px;
+    height: 30%;
+    width: auto;
+    padding-left: 35%;
+    padding-top: 10%;
+    border-radius: 10px;
+
+
+
+}
+
+a{
+    text-decoration: none;
+}
+/* header>nav>ul{
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(10,1fr) ;
+    column-gap: 1%;
+
+}
+
+li{
+    padding: 20px;
+}
+li>{
+    display: flex;
+    flex-direction: row;
+}
+li a{
+    padding-left: 30%;
+    padding-top: 30%;
+
+    
+} */
+.Gea{
+    background-color: var(--GeaColor);
+}
+.Geii{
+    background-color: var(--GeiiColor);
+}
+.Gmp{
+    background-color:var(--GmpColor);
+}
+.Mt2e{
+    background-color:var(--Mt2eColor);
+}
+.Info{
+    background-color:var(--InfoColor);
+}
+.Qlio{
+    background-color: var(--QlioColor);
+}
+.Sgm{
+    background-color: var(--SgmColor);
+}
+
+/* Pas Moi */
+
+.dropbtn {
+    
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content .Gea a:hover {background-color: #006AB3}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;
+    max-height: max-content;
+    transition:max-height ease-in 0.25s;
+}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn  {background-color: #006AB3;}
+  .dropdown:hover .dropbtn .Geii {background-color: #026189;}
+  .dropdown:hover .dropbtn .Gmp {background-color: #08615c;}
+  .dropdown:hover .dropbtn .Mt2e {background-color: #0b4f25;}
+  .dropdown:hover .dropbtn .Info {background-color: #4f6112;}
+  .dropdown:hover .dropbtn .Qlio {background-color: #847d18;}
+  .dropdown:hover .dropbtn .Sgm {background-color: #745625;}
