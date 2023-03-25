@@ -3,39 +3,162 @@ body{
     --GeaColor:#006AB3;
     --GeiiColor:#009EE0;
     --GmpColor:#009790;
-    --Mt2eColor:#009036;
-    --InfoColor:#96BF0D;
+    --InfoColor:#009036;
+    --Mt2eColor:#96BF0D;
     --QlioColor:#DDCF1B;
     --SgmColor:#F29400;
     --back-menu:#999A9D;
     
     
+    --BW_0: #FFFFFF;
+    --BW_P: #505050;
+    --BW_1: #E0E9F4;
+    --BW_2: #C3D4E9;
+    --BW_3: #90A3BF;
+    --BW_4: #596780;
+    --BW_5: #1A202C;
+    --BW_6: #131825;
+    --BW_7: #0D121F;
+    --BW_8: #080C19;
+    --BW_9: #040815;
+
+
+    --Burple_1: #D6E4FD;
+    --Burple_2: #AEC8FC;
+    --Burple_3: #85A8F8;
+    --Burple_4: #658DF1;
+    --Burple_5: #3563E9;
+    --Burple_6: #264BC8;
+    --Burple_7: #1A37A7;
+    --Burple_8: #102587;
+    --Burple_9: #0A196F;
+
+    --Green_1: #F5FCD2;
+    --Green_2: #E8FAA6;
+    --Green_3: #D3F178;
+    --Green_4: #BCE455;
+    --Green_5: #9CD323;
+    --Green_6: #7FB519;
+    --Green_7: #659711;
+    --Green_8: #4C7A0B;
+    --Green_9: #3B6506;
+    
+    --Red_1: #FFE7D3;
+    --Red_2: #FFC8A6;
+    --Red_3: #FFA37A;
+    --Red_4: #FF7F59;
+    --Red_5: #FF4423;
+    --Red_6: #DB2719;
+    --Red_7: #B71112;
+    --Red_8: #930B16;
+    --Red_9: #7A0619;
+
+    --Yellow_1: #FFF8D7;
+    --Yellow_2: #FFEFB0;
+    --Yellow_3: #FFE488;
+    --Yellow_4: #FFD96B;
+    --Yellow_5: #FFC73A;
+    --Yellow_6: #DBA32A;
+    --Yellow_7: #B7821D;
+    --Yellow_8: #936312;
+    --Yellow_9: #7A4D0B;
+
+
+    --aGreen_1: #039700;
+    --aGreen_2: #2AD027;
+    --aGreen_3: #92F590;
+    --aGreen_4: #C7FEC6;
+
+
+
+
+    /*Border-Radius*/
+    --border_radius_G:40px;
+    --border_radius_M:32px;
+    --border_radius_P:28px;
+
+
+
+    /*Tipographie*/
+
+    --text_xs:12px;
+    --text_s: 14px;
+    --text_base: 16px;
+    --text_m: 18px;
+    --text_l: 20px;
+    --text_xl: 24px;
+    --text_2xl: 32px;
+    --text_3xl: 36px;
+
+    --line_heigt: 150%;
+
+    background-color: var(--BW_1);
+    margin: 0%;
+    padding: 0%;
 }
 
 header{
     margin-top: -10px;
     margin-left: -10px;
 
+    padding-left: 20px;
+    padding-right: 20px;
+
     display: grid;
     grid-template-columns: repeat(9,2fr);
     column-gap: 20px;
     background-color: var(--back-menu);
 }
+main{
+    display: grid;
+    width: 100%;     
+    grid-template-columns: 1fr 5fr;
+    height:max-content ;
+    
+}
+
+#logo{
+    width: 100px;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+}
+
+nav div img{
+    width: 80px;
+}
 
 .Button{
-    margin-top: 20px;
+
+    margin: 2vh;
+
     height: 30%;
     width: auto;
-    padding-left: 35%;
-    padding-top: 10%;
+    
     border-radius: 10px;
+    display: flex; justify-content: space-around; 
+    
+    padding: 16px;
+    font-size: 16px;
+    gap:150px;
+    
 
+
+    
 
 
 }
 
-a{
+.dropdownContent{
+    gap:5vh;
     text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000;
+
+
 }
 /* header>nav>ul{
     text-decoration: none;
@@ -61,6 +184,7 @@ li a{
 } */
 .Gea{
     background-color: var(--GeaColor);
+    
 }
 .Geii{
     background-color: var(--GeiiColor);
@@ -84,16 +208,17 @@ li a{
 /* Pas Moi */
 
 .dropbtn {
+
+
     
-    padding: 16px;
-    font-size: 16px;
-    border: none;
   }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -104,31 +229,219 @@ li a{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     max-height: 0;
+
+
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: rgb(216, 216, 216);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     
   }
+  .dropdown-content a:hover {
+    color: rgb(216, 216, 216);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    backdrop-filter: brightness(90%);
+    
+  }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content .Gea a:hover {background-color: #006AB3}
+  /* .dropdown-content .Gea a:hover {background-color: #006AB3}
+  .dropdown-content .Geii a:hover {background-color: #006AB3} */
+
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;
+  .dropdown:hover .dropdown-content {
+    margin-top: -10px;
+    width: 2fr  ;
+    display: block;
     max-height: max-content;
     transition:max-height ease-in 0.25s;
+    
 }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn  {background-color: #006AB3;}
-  .dropdown:hover .dropbtn .Geii {background-color: #026189;}
-  .dropdown:hover .dropbtn .Gmp {background-color: #08615c;}
-  .dropdown:hover .dropbtn .Mt2e {background-color: #0b4f25;}
-  .dropdown:hover .dropbtn .Info {background-color: #4f6112;}
-  .dropdown:hover .dropbtn .Qlio {background-color: #847d18;}
-  .dropdown:hover .dropbtn .Sgm {background-color: #745625;}
+/*.dropdown:hover .Gea  {background-color: #006AB3;}
+.dropdown:hover .Geii {background-color: #026189;}
+.dropdown:hover .Gmp {background-color: #08615c;}
+.dropdown:hover .Info {background-color: #0b4f25;}
+.dropdown:hover .Mt2e {background-color: #4f6112;}
+.dropdown:hover .Qlio {background-color: #847d18;}
+.dropdown:hover .Sgm {background-color: #745625;}*/
+
+  
+h1{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+
+}
+
+img{
+    width: 40%;
+    height: fit-content;
+}
+
+.sidebar_hypertext {
+    margin:auto;   
+}
+
+.loupe {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 50%; 
+    height: 50%
+}
+
+main{
+    display: flex;
+    flex-direction: row ;
+    justify-content: start;
+}
+
+nav{
+    
+    background-color: #D9D9D9;
+    width: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    max-width: 300px;
+    min-width: 200px;
+    height: 70vh;
+    min-height: 600px;
+    padding-top: 35px;
+    
+    /*min-height: 1000px;*/
+}
+
+
+section{
+    max-width: 100%;
+    min-width: 300px;    
+}
+
+.dropdownContent {
+    
+    justify-content: center ;
+    display:flex;
+    align-items: center;
+    
+
+}
+.nav-link{
+    text-justify: auto;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    
+}
+
+
+
+
+.navbarText {
+    text-align: center;
+    margin-bottom:1vh;
+}
+
+
+/* Emploi Du temps*/
+section {
+    
+    /*margin-top: 200px;*/
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 3%;
+  }
+  
+
+
+/*CHANGER LES COULEURS !!!!!*/
+.tp{
+    background-color: rgb(251, 138, 157);
+}
+.td{
+    background-color: rgb(0, 154, 154);
+}
+
+.amphi{
+    background-color: rgb(255, 56, 56);
+}
+.sem{
+    background-color: rgb(178, 0, 178);
+}
+.ds{
+    background-color: rgb(182, 12, 12);
+}
+
+/*j'aime les Pied */
+
+footer{
+    position: absolute;
+    background-color:#000000;
+    margin-top: 10px;
+    width: 100%;
+    height:15vh;
+
+}
+.footer{
+    display: block;
+    margin: 0;
+    }
+.fdivl{
+    float: left;
+}    
+.fdivc{
+    float: center;
+}   
+.fdivd{
+    float: right;
+}
+.ftext{
+    font-size: 11px;
+    color:var(--BW_0);
+    margin-bottom: -5px; 
+}
+
+.fdiv{
+    grid-template:
+            "a b c"  20%;
+}
+
+#logo_nantes_univ{
+    margin-top: 2vh;
+    margin-left: 1vh;
+
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
