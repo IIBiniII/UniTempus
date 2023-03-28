@@ -96,6 +96,10 @@ body{
     margin: 0%;
     padding: 0%;
 }
+a{
+    color: var(--BW_0);
+}
+
 
 header{
 
@@ -107,23 +111,40 @@ header{
     min-height: 50px;
 
     display: grid;
-    grid-template-columns: repeat(9,2fr);
+    grid-area: "a b";
+    grid-template-columns: minmax(100px, 200px ) minmax(650px , 1fr);
+    justify-content: start;
+    background-color: var(--back-menu);
+
+
+}
+
+.gdiv{
+    display: grid;
+    grid-template-columns: repeat(8,2fr);
     column-gap: 10px;
     background-color: var(--back-menu);
 }
 
 
 .logo{
-    max-width: 200px;
-    min-width: 25px;
-    max-height: 200px;   
-    min-height: 25px;
+
 }
 .logo2{
     position: absolute; /* Pour positionner l'image par rapport au conteneur */
-    width: 100%; /* L'image prendra la largeur du conteneur */
-    height: 100%; /* L'image prendra la hauteur du conteneur */
+     /* L'image prendra la largeur du conteneur */
+     /* L'image prendra la hauteur du conteneur */
+    max-width: 200px;
+    min-width: 50px;
+    max-height: 80px;   
+    min-height: 50px;
     object-fit: cover; /* Ajuste l'image à la taille du conteneur */
+}
+.mdivlogo{
+    max-width: 200px;
+    min-width: 50px;
+    max-height: 80px;   
+    min-height: 50px;
 }
 
 nav div{
@@ -410,7 +431,7 @@ footer{
     grid-template-areas: "a b c";
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #000000;
     padding: 10px;
   }
 
@@ -421,7 +442,6 @@ footer{
     align-items: center;
     grid-template-rows: 2fr 1fr ;
     gap: 0px;
-    background-color: #f32179;
 }
 
 .grid-container3{
@@ -430,7 +450,6 @@ footer{
     grid-template-areas: "a b";
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
-    background-color: #4fa144;
 }
 
 .mdiv{
@@ -502,6 +521,8 @@ footer{
     min-width: 100px;
     max-height: 100px;
     min-height: 25px;
+
+    object-fit: cover;
 
     margin: 0px;
     padding-left: 20px;
