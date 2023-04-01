@@ -225,7 +225,7 @@ li a{
 }
   
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+  .dropdown, .drp {
     position: relative;
     display: inline-block;
     height: auto;
@@ -408,6 +408,9 @@ tbody th{
     
 
 }
+td{
+    gap: 5px;
+}
 
 thead tr{
     background-color: rgb(20, 20, 20);
@@ -415,21 +418,37 @@ thead tr{
     
 }
 
+.drp-content{
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 0;
+}
 
-.tp{
+td:hover .drp-content{
+    width: max-content;
+    margin:auto;
+    display: block;
+    max-height: max-content;
+    transition:max-height ease-in 0.05s;
+    box-shadow: none;
+}
+
+.tp:hover{
     background-color: rgb(251, 138, 157);
 }
-.td{
+.td:hover{
     background-color: rgb(0, 154, 154);
 }
 
-.amphi{
+.amphi:hover{
     background-color: rgb(255, 56, 56);
 }
-.sem{
+.sem:hover{
     background-color: rgb(178, 0, 178);
 }
-.ds{
+.ds:hover{
     background-color: rgb(182, 12, 12);
 }
 
