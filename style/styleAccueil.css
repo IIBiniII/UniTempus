@@ -115,8 +115,6 @@ body{
     border-top:5px solid var(--Button-color);
     margin-bottom:20px;
     display: inline-block;
-    
-
 }
 
 section {
@@ -124,16 +122,15 @@ section {
     
 }
 
-.newsStudent {
+.newsStudent div {
     display: grid;
-    grid-template-areas:  "a b "
-                          ;
+    grid-template-columns: 150px 200px;
     margin-top: 10px;
-    gap: 10px;
+    column-gap: 10px;
     
 }
-.figure img{
-    width:15% ;
+.newsStudent img{
+    width:150px ;
 
 }
 
