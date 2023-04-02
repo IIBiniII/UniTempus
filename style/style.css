@@ -379,21 +379,21 @@ td:hover .drp-content{
     box-shadow: none;
 }
 
- .tp:hover{
+table .tp{
     background-color:#FF9EFF;
 }
- .td:hover{
+table .td{
     background-color:#8FC1FD;
 }
 
- .amphi:hover{
+table .amphi{
     
     background-color:#FF7F7F;
 }
- .sem:hover{
+table .sem{
     background-color:#BF7FFF
 }
- .ds:hover{
+table .ds{
     background-color:#BF7F7F;
 }
 
