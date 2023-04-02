@@ -129,6 +129,7 @@ section {
     gap:20px;
 }
 
+
 #instaPics{
     display: grid;
     grid-template-areas: ". a ."
