@@ -1,0 +1,151 @@
+body{
+    /*
+    --GeaColor:#006AB3;
+    --GeiiColor:#009EE0;
+    --GmpColor:#009790;
+    --InfoColor:#009036;
+    --Mt2eColor:#96BF0D;
+    --QlioColor:#DDCF1B;
+    --SgmColor:#F29400;*/
+    --Button-color:#D3103C;
+    --back-menu:#000000;
+    
+    
+    --BW_0: #FFFFFF;
+    --BW_P: #505050;
+    --BW_1: #E0E9F4;
+    --BW_2: #C3D4E9;
+    --BW_3: #90A3BF;
+    --BW_4: #596780;
+    --BW_5: #1A202C;
+    --BW_6: #131825;
+    --BW_7: #0D121F;
+    --BW_8: #080C19;
+    --BW_9: #040815;
+
+
+    --Burple_1: #D6E4FD;
+    --Burple_2: #AEC8FC;
+    --Burple_3: #85A8F8;
+    --Burple_4: #658DF1;
+    --Burple_5: #3563E9;
+    --Burple_6: #264BC8;
+    --Burple_7: #1A37A7;
+    --Burple_8: #102587;
+    --Burple_9: #0A196F;
+
+    --Green_1: #F5FCD2;
+    --Green_2: #E8FAA6;
+    --Green_3: #D3F178;
+    --Green_4: #BCE455;
+    --Green_5: #9CD323;
+    --Green_6: #7FB519;
+    --Green_7: #659711;
+    --Green_8: #4C7A0B;
+    --Green_9: #3B6506;
+    
+    --Red_1: #FFE7D3;
+    --Red_2: #FFC8A6;
+    --Red_3: #FFA37A;
+    --Red_4: #FF7F59;
+    --Red_5: #FF4423;
+    --Red_6: #DB2719;
+    --Red_7: #B71112;
+    --Red_8: #930B16;
+    --Red_9: #7A0619;
+
+    --Yellow_1: #FFF8D7;
+    --Yellow_2: #FFEFB0;
+    --Yellow_3: #FFE488;
+    --Yellow_4: #FFD96B;
+    --Yellow_5: #FFC73A;
+    --Yellow_6: #DBA32A;
+    --Yellow_7: #B7821D;
+    --Yellow_8: #936312;
+    --Yellow_9: #7A4D0B;
+
+
+    --aGreen_1: #039700;
+    --aGreen_2: #2AD027;
+    --aGreen_3: #92F590;
+    --aGreen_4: #C7FEC6;
+
+
+
+
+    /*Border-Radius*/
+    --border_radius_G:40px;
+    --border_radius_M:32px;
+    --border_radius_P:28px;
+
+
+
+    /*Tipographie*/
+
+    --text_xs:12px;
+    --text_s: 14px;
+    --text_base: 16px;
+    --text_m: 18px;
+    --text_l: 20px;
+    --text_xl: 24px;
+    --text_2xl: 32px;
+    --text_3xl: 36px;
+
+    --line_heigt: 150%;
+
+    background-color: var(--BW_0);
+    margin: 0%;
+    padding: 0%;
+}
+
+.newsText {
+    display: inline-block;
+    font-size: 12.5px;
+    
+}
+.info img{
+    width:16vw ;
+    object-fit: contain;
+}
+
+.newsBox {
+    background-color: #f1f2f6;
+    padding: 20px;
+    border: 1px solid #dfe0e2; 
+    border-top:5px solid var(--Button-color);
+    margin-bottom:20px;
+    
+
+}
+
+section {
+    margin: 2%;
+}
+
+.newsStudent {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+    gap: 10px;
+    
+}
+.figure img{
+    width:15% ;
+
+}
+
+.newsStudent p {
+    display: inline-block;
+    font-weight: 600;
+    font-size: medium;  
+    vertical-align: top;
+    text-align: left; 
+
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+}
+

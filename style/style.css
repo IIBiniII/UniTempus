@@ -98,7 +98,7 @@ body{
     margin: 0%;
     padding: 0%;
 }
-a{
+header a{
     color: var(--BW_0);
 }
 
@@ -662,51 +662,5 @@ table, th, td {
 
 
 
-
-  
-  /**/
-/* CSS de base */
-.menu-accordion {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .menu-accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 1rem;
-    background-color: #eee;
-    border-top: 1px solid rgb(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-    border-left: 1px hidden rgb(0, 0, 0, 0.2);
-    border-right: 1px hidden rgb(0, 0, 0, 0.2);
-  }
-  
-  .menu-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
-  
-  input[type="radio"]:checked + .menu-accordion-header + .menu-accordion-content {
-    max-height: 1000px; /* Augmente la hauteur au maximum */
-    transition: max-height 0.5s ease-in;
-  }
-  
-  .menu-accordion-header::before {
-    content: '\25B6';
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-  
-  input[type="radio"]:checked + .menu-accordion-header::before {
-    content: '\25BC';
-  }
 
   
