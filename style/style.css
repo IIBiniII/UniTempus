@@ -100,6 +100,7 @@ body{
 }
 header a , footer a{
     color: var(--BW_0);
+    
 }
 
 
@@ -381,21 +382,21 @@ td:hover .drp-content{
     box-shadow: none;
 }
 
- .tp:hover{
+table .tp{
     background-color:#FF9EFF;
 }
- .td:hover{
+table .td{
     background-color:#8FC1FD;
 }
 
- .amphi:hover{
+table .amphi{
     
     background-color:#FF7F7F;
 }
- .sem:hover{
+table .sem{
     background-color:#BF7FFF
 }
- .ds:hover{
+table .ds{
     background-color:#BF7F7F;
 }
 
@@ -611,16 +612,14 @@ table, th, td {
     align-items: center;
     cursor: pointer;
     padding: 1rem;
-    background-color: #eee;
+    background-color: #ffffff;
     border-top: 1px solid rgb(0, 0, 0, 0.2);
     border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     border-left: 1px hidden rgb(0, 0, 0, 0.2);
     border-right: 1px hidden rgb(0, 0, 0, 0.2);
-    background-color: var(--Red_2);
-    color: white;
   }
   
-  .menu-accordion-content {
+  .menu-accordion-content { /* Partie groupe*/
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;

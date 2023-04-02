@@ -114,24 +114,23 @@ body{
     border: 1px solid #dfe0e2; 
     border-top:5px solid var(--Button-color);
     margin-bottom:20px;
-    
-
+    display: inline-block;
 }
 
 section {
     margin: 2%;
-}
-
-.newsStudent {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 10px;
-    gap: 10px;
     
 }
-.figure img{
-    width:15% ;
+
+.newsStudent div {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    margin-top: 10px;
+    column-gap: 10px;
+    
+}
+.newsStudent img{
+    width:150px ;
 
 }
 
