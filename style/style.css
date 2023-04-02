@@ -261,10 +261,6 @@ li a{
     
   }
   
-  /* Change color of dropdown links on hover */
-  /* .dropdown-content .Gea a:hover {background-color: #006AB3}
-  .dropdown-content .Geii a:hover {background-color: #006AB3} */
-
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -277,14 +273,6 @@ li a{
     
 }
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-/*.dropdown:hover .Gea  {background-color: #006AB3;}
-.dropdown:hover .Geii {background-color: #026189;}
-.dropdown:hover .Gmp {background-color: #08615c;}
-.dropdown:hover .Info {background-color: #0b4f25;}
-.dropdown:hover .Mt2e {background-color: #4f6112;}
-.dropdown:hover .Qlio {background-color: #847d18;}
-.dropdown:hover .Sgm {background-color: #745625;}*/
 
   
 h1{
@@ -376,11 +364,35 @@ section {
     align-items: center;
   }
   
+p{
+    display: inline;
+}
+.button-edt{
+    background-color: var(--Button-color);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: min-content;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-edt:hover{
+    background-color: #900202;  
+}
 
 /*Emploi Du Temps */
 /*CHANGER LES COULEURS !!!!!*/
 
-
+#compTable{
+    display:table;
+}
+#phoneTable{
+    display: none;
+}
 table{
     margin:auto;
     margin-top: auto;
@@ -389,8 +401,7 @@ table{
     border-collapse: collapse;
     border-radius: 1em;
     overflow: hidden;
-    border: 1px solid #000000;
-    
+        
     /*background-color: var(--Button-color);*/
 
 }
@@ -407,9 +418,6 @@ tbody th{
     text-shadow: 1px 0 #313131, -1px 0 #313131, 0 1px #313131, 0 -1px #313131;
     
 
-}
-td{
-    gap: 5px;
 }
 
 thead tr{
@@ -461,7 +469,7 @@ footer{
     position: absolute;
     background-color:#000000;
     margin-top: 10px;
-    width: 100%;
+    width: max-content;
     max-height: max-content;
     min-height: 155px;
     padding: 0px;
@@ -574,16 +582,98 @@ footer{
 
 
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
   }
   th, td {
     padding: 10px;
     text-align: center;
+    border: 1px solid black;
+
   }
 
 
+  @media screen and (max-width: 1700px) {
+    table{
+        margin:auto;
+        margin-top: auto;
+        width: auto;
+        height: 450px;
+        border-collapse: collapse;
+        border-radius: 1em;
+        overflow: hidden;
+    
+    }
 
+  }
+
+  @media screen and (max-width: 790px) {
+    #compTable{
+        display: none;
+    }
+    #phoneTable{
+        display: table;
+    }
+    table thead {
+        display: none;
+    }
+    
+    table tr{
+    display: block;
+    margin-bottom: 40px;
+    }
+    
+    table td {
+    display: block;
+    text-align: right;
+    }
+    
+    table td:before {
+        
+    content: attr(data-label);
+    background-color: rgb(0, 0, 0);
+    border: #000000 1px solid;
+    color:white;
+    font-size: small;
+    margin-top: -10px;
+    margin-left:-10px;
+    float: left;
+    font-weight: bold;
+    }
+    .drp-content{
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        max-height: 0;
+
+        width: max-content;
+        margin:auto;
+        display: block;
+        max-height: max-content;
+        transition:max-height ease-in 0.05s;
+        box-shadow: none;
+    }
+
+    table .tp{
+        background-color:#FF9EFF;
+    }
+     table .td{
+        background-color:#8FC1FD;
+    }
+    
+    table .amphi{
+        
+        background-color:#FF7F7F;
+    }
+    table .sem{
+        background-color:#BF7FFF
+    }
+    table .ds{
+        background-color:#BF7F7F;
+    }
+
+    
+
+  }
 
 
 
