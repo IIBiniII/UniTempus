@@ -114,18 +114,20 @@ body{
     border: 1px solid #dfe0e2; 
     border-top:5px solid var(--Button-color);
     margin-bottom:20px;
+    display: inline-block;
     
 
 }
 
 section {
     margin: 2%;
+    
 }
 
 .newsStudent {
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-areas:  "a b "
+                          ;
     margin-top: 10px;
     gap: 10px;
     
