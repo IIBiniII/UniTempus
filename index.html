@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.4">
     <link href="style/style.css" rel="stylesheet" type="text/css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-rZd2CNv7hWj/Q8EuaA27uYHtjdbfSyW93h8MG+t7H9+mnE5rK3oxA5C5oBw5fl+zt4qUN3c/BVVQ6eH61Xz9+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <title>Unitempus</title>
 </head>
 <body>
-    <header>
+
+<!-- le contenu que vous voulez faire défiler horizontalement -->
+
+    <header class="">
         <div>
             <div class="dropdown mdivlogo">
-                <a class="logo" href="">
+                <a class="logo" href="accueil.html">
                     <img class="logo2" src="Img/logoBlanc.png"  alt="Logo de l'IUT de Nantes">
                 </a>
             </div>
         </div>
 
-        <div class="gdiv">
+        <div class="gdiv scroll-container">
             <!--Gea-->
-            <div class="dropdown">
-                <button class="dropbtn">Gea</button>
-                <div class="dropdown-content">
+            <div class="dropdown scroll-content">
+                <button class="dropbtn  ">Gea</button>
+                <div class="dropdown-content  dropdown-content">
                     <br>
                         <div class="menu-accordion">
                             <input type="radio" id="menu-accordion-item-1" name="menu-accordion">
@@ -71,12 +75,12 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
             <!--GEII-->
-            <div class="dropdown">
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">GEII</button>
                 <div class="dropdown-content">
                     <br>
@@ -117,12 +121,12 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
             <!--GMP-->
-            <div class="dropdown">
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">GMP</button>
                 <div class="dropdown-content">
                     <br>
@@ -165,12 +169,12 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
             <!--INFO-->
-            <div class="dropdown">
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">INFO</button>
                 <div class="dropdown-content">
                     <br>
@@ -211,12 +215,12 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
             <!--MT2E-->
-            <div class="dropdown">
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">MT2E</button>
                 <div class="dropdown-content">
                     <br>
@@ -254,14 +258,14 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
-            <!--QLIO-->
-            <div class="dropdown">
+            <!--QLIO--> 
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">QLIO</button>
-                <div class="dropdown-content">
+                <div class="dropdown-content  .dropdown-content">
                     <br>
                         <div class="menu-accordion">
                             <input type="radio" id="menu-accordion-item-QLIO1" name="menu-accordion">
@@ -295,12 +299,12 @@
                     
                     <br>
                 </div>
-              </div>
+            </div>
         
         
         
             <!--SGM-->
-            <div class="dropdown">
+            <div class="dropdown scroll-content">
                 <button class="dropbtn">SGM</button>
                 <div class="dropdown-content">
                     <br>
@@ -346,22 +350,22 @@
     
     </header>
 
-
     <!--Deuxieme block-->
     <main>
         
 
 
         <!--nav-->
-        <div class="invisible">
+        <div class="invisible ">
             <nav class="nav f1">
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://edt.univ-nantes.fr/iut_nantes/">
-                    <img class="sidebar_hypertext" src="Img/Horloge.svg">
-                    
-                    <p class="navbarText">Ancienne</p>
-                    <p class="navbarText">Version</p>
-                        
+                        <div>
+                            <img class="sidebar_hypertext" src="Img/Horloge.svg">
+                        </div>
+                        <div>
+                            <p class="navbarText">Ancienne Version</p>
+                        </div>
                     </h3>
 
                     </a>
@@ -369,31 +373,48 @@
                 
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://madoc.univ-nantes.fr/">
-                    <img src="Img/Livre.svg">
-                    
-                    <p class="navbarText">Madoc</p>
-                
+                        <div>
+                            <img class="sidebar_hypertext" src="Img/Livre.svg">
+                        </div>
+                        <div>
+                            <p class="navbarText">Madoc</p>
+                        </div>
                     </a>
                 </div>
                 
 
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://nantilus.univ-nantes.fr">
-                    <img src="Img/LivreLoupe.svg">
-                    <p class="navbarText">Nantilus</p>
+                    <div>
+                        <img class="sidebar_hypertext" src="Img/LivreLoupe.svg">
+                    </div>
+
+                    <div>
+                        <p class="navbarText">Nantilus</p>
+                    </div>
+                    
                     </a>
                 </div>
                 
                 <div class="sidebar_hypertext"> 
+                    
                     <a class="nav-link" href="https://uncloud.univ-nantes.fr/index.php/login">
-                    <img src="Img/Nuage.svg">
-                    <p class="navbarText">Un-cloud</p>
+                        <div>
+                            <img class="sidebar_hypertext" src="Img/Nuage.svg">
+                        </div>
+                        <div>
+                            <p class="navbarText">Un-cloud</p>
+                        </div>
                     </a>
                 </div>
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://webmail-etu.univ-nantes.fr/src/login.php">
-                    <img src="Img/webmail.svg">
-                    <p class="navbarText">Webmail</p>
+                        <div>
+                            <img class="sidebar_hypertext" src="Img/webmail.svg">
+                        </div>
+                        <div>
+                            <p class="navbarText">Webmail</p>
+                        </div>
                     </a>
                 </div>
             </nav>
@@ -411,23 +432,89 @@
                 <!--Barre nav gauche-->
                 <div class="visible">
                     <input type="checkbox" id="menu-toggle"/>
-                    <label for="menu-toggle" class="menu-icon visible"><i class="fa fa-bars">vyqfiuzbfdukjb</i></label>
-        
+                    <label for="menu-toggle" class="menu-icon visible"><i class="fas fa-bars"><svg href="Img/list.svg"></svg> </i></label>
         
                 
                     <div class="slideout-sidebar">
                         <ul>
-                            <li>Home</li>
-                            <li>Catalog</li>
-                            <li>About Us</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
+                            <li>
+                                <div class="sidebar_hypertext slidiv"> 
+                                    <a class="nav-link" href="https://edt.univ-nantes.fr/iut_nantes/">
+                                        <div>
+                                            <img class="sidebar_hypertext" src="Img/Horloge.svg">
+                                        </div>
+                                        <div>
+                                            <p class="navbarText">Ancienne Version</p>
+                                        </div>
+                                    </h3>
+                
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar_hypertext slidiv"> 
+                                    <a class="nav-link" href="https://madoc.univ-nantes.fr/">
+                                        <div>
+                                            <img class="sidebar_hypertext" src="Img/Livre.svg">
+                                        </div>
+                                        <div>
+                                            <p class="navbarText">Madoc</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar_hypertext  slidiv">
+                                    <a class="nav-link" href="https://nantilus.univ-nantes.fr">
+                                    <div>
+                                        <img class="sidebar_hypertext" src="Img/LivreLoupe.svg">
+                                    </div>
+                
+                                    <div>
+                                        <p class="navbarText">Nantilus</p>
+                                    </div>
+                                    
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar_hypertext slidiv"> 
+                                    
+                                    <a class="nav-link" href="https://uncloud.univ-nantes.fr/index.php/login">
+                                        <div>
+                                            <img class="sidebar_hypertext" src="Img/Nuage.svg">
+                                        </div>
+                                        <div>
+                                            <p class="navbarText">Un-cloud</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar_hypertext slidiv"> 
+                                    <a class="nav-link" href="https://webmail-etu.univ-nantes.fr/src/login.php">
+                                        <div>
+                                            <img class="sidebar_hypertext" src="Img/webmail.svg">
+                                        </div>
+                                        <div>
+                                            <p class="navbarText">Webmail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
+
+
+
+
                     </div>
                 </div>
 
-
-
+                <div>
+                    <span>
+                        <h1>GEA :</h1>  <h2>Groupe a</h2>
+                    </span>
+                </div>
                 <table id="compTable">
                 <caption><h1>Emploi du temps</h1> <div class="button-edt">&lsaquo;</div><p>Semaine : 14</p><div class="button-edt">&rsaquo;</div></caption>
                 
