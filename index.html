@@ -195,10 +195,10 @@
                 https://edt.univ-nantes.fr/iut_nantes/g3164.ics-->
 
 
-                <table>
-                <caption><h1>Emploi du temps</h1> <p>Semaine : </p></caption>
+                <table id="compTable">
+                <caption><h1>Emploi du temps</h1> <div class="button-edt">&lsaquo;</div><p>Semaine : 14</p><div class="button-edt">&rsaquo;</div></caption>
                 
-                    <thead>
+                    <thead> 
                         <tr >
                             <th></th>
                             <th>Lundi</th>
@@ -213,7 +213,7 @@
                         <th >8h00-9h20</th>
                         <td id="M1  " class="amphi">Services réseau <div class="drp-content">J-Amphi 1 <br> -Promo-<br> HERNANDEZ Nicolas</div></td>
                         <td id="T1 " class="tp ">Anglais Entreprise <div class="drp-content"> J-E2/22<br>-TP-  <br> CHARRIAU Véronique</div></td>
-                        <td id="W1 "></td>
+                        <td id="W1 "> <br>  <br> </td>
                         <td id="TH1 " class="td ">Développement d'objets <div class="drp-content">J-C0/05 <br>-TD- <br> LANOIX Arnaud</div></td>
                         <td id="F1 " class="ds ">Stats Desciptives <div class="drp-content"> J-E1/14 <br>-DS-<br>QUINIOU Solen </div></td>
                     </tr>
@@ -247,7 +247,7 @@
                         <td id="T4" class=""> <div class="drp-content"> <br>  <br> </div></td>
                         <td id="W4" class="td">Exploitation base de données <div class="drp-content">J-C0/03 <br>-TD-  <br>NACHOUKI Gilles </div></td>
                         <td id="TH4" class="td">PPP 2 <div class="drp-content">J-E1/14 <br>-TD-  <br>TOURNÈS Fabienne </div></td>
-                        <td id="F4" class=""></td>
+                        <td id="F4" class=""> <br>  <br> </td>
                     </tr>
                     <tr>
                         <th>15h00-16h20</th>
@@ -255,18 +255,81 @@
                         <td id="T5" class=""> <div class="drp-content"> <br>  <br> </div></td>
                         <td id="W5" class="td">Services réseau <div class="drp-content">J-C0/03 <br>-TD-  <br>REMM Jean-François </div></td>
                         <td id="TH5" class="td">PPP 2 <div class="drp-content">J-E1/14 <br>-TD- <br>TOURNÈS Fabienne </div></td>
-                        <td id="F5"></td>
+                        <td id="F5"> <br>  <br> </td>
                     </tr>
                     <tr>
                         <th>16h30-17h50</th>
-                        <td id="M6"></td>
+                        <td id="M6"> <br>  <br> </td>
                         <td id="T6" class="sem">Séminaire <div class="drp-content">TAMZALIT Dalila <br>-SEMINAIRE-  <br>J-Amphi 1 </div></td>
                         <td id="W6"></td>
                         <td id="TH6" class="tp">Services réseau <div class="drp-content">J-C0/03 <br>-TP-  <br>REMM Jean-François </div></td>
-                        <td id="F6"></td>
+                        <td id="F6"> <br>  <br> </td>
                     </tr>
                 </tbody>
                 </table>
+
+                <table id="phoneTable">
+                    <caption><div class="button-edt">&lsaquo;</div><p>Semaine : 14</p><div class="button-edt">&rsaquo;</div></caption>
+                    
+                        <thead>
+                            <tr >
+                                <th></th>
+                                <th>8h00-9h20</th>
+                                <th>9h30-10h50</th>
+                                <th>11h00-12h20</th>
+                                <th>13h30-14h50</th>
+                                <th>15h00-16h20</th>
+                                <th>16h30-17h50</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th >Lundi</th>
+                            <td id="M1" data-label="8h00-9h20" class="amphi">Services réseau <div class="drp-content">J-Amphi 1 <br> -Promo-<br> HERNANDEZ Nicolas</div></td>
+                            <td id="M2" data-label="9h30-10h50" class="td">Développement d'apps avec IHM <div class="drp-content">J-E1/14 <br>-TD- <br>BOUTIN Olivier  </div></td>
+                            <td id="M3" data-label="11h00-12h20" class="td">Communication professionnelle <div class="drp-content">J-E1/14 <br>-TD- <br>CAZALAS Sebastien  </div></td>
+                            <td id="M4" data-label="13h30-14h50" class="td">Développement d'apps avec IHM <div class="drp-content">J-C0/01 <br>-TD-  <br>BOUTIN Olivier </div></td>
+                            <td id="M5" data-label="15h00-16h20"  class="tp">Anglais Entreprise <div class="drp-content">J-E2/22 <br>-TP-  <br> CHARRIAU Véronique</div></td>
+                            <td id="M6" data-label="16h30-17h50"  > <br>  <br> </td>
+                        </tr>
+                        <tr>
+                            <th>Mardi</th>
+                            <td id="T1" data-label="8h00-9h20"  class="tp ">Anglais Entreprise <div class="drp-content"> J-E2/22<br>-TP-  <br> CHARRIAU Véronique</div></td>
+                            <td id="T2" data-label="9h30-10h50" class="tp">Développement Objets <div class="drp-content">J-E1/13 <br>-TP-  <br>REMM Jean-François </div></td>
+                            <td id="T3" data-label="11h00-12h20" class="tp">Développement Objets <div class="drp-content">J-E1/13 <br>-TP-  <br>REMM Jean-François </div></td>
+                            <td id="T4" data-label="13h30-14h50"  class=""> <div class="drp-content"> <br>  <br> </div></td>
+                            <td id="T5" data-label="15h00-16h20"   class=""> <div class="drp-content"> <br>  <br> </div></td>
+                            <td id="T6" data-label="16h30-17h50"  class="sem">Séminaire <div class="drp-content">TAMZALIT Dalila <br>-SEMINAIRE-  <br>J-Amphi 1 </div></td>                           
+                        </tr>
+                        <tr>
+                            <th>Mercredi</th>
+                        <td id="W1 " data-label="8h00-9h20" ><br>  <br></td>
+                        <td id="W2" data-label="9h30-10h50" class="tp">Exploitation base de données <div class="drp-content">J-E1/17 <br>-TP-  <br>NACHOUKI Gilles </div></td>
+                        <td id="W3" data-label="11h00-12h20" class="tp">Exploitation base de données <div class="drp-content">J-E1/17 <br>-TP-  <br>NACHOUKI Gilles </div></td>
+                        <td id="W4" data-label="13h30-14h50"  class="td">Exploitation base de données <div class="drp-content">J-C0/03 <br>-TD-  <br>NACHOUKI Gilles </div></td>
+                        <td id="W5" data-label="15h00-16h20"   class="td">Services réseau <div class="drp-content">J-C0/03 <br>-TD-  <br>REMM Jean-François </div></td>
+                        <td id="W6" data-label="16h30-17h50" > <br>  <br>  </td>
+                        </tr>
+                        <tr>
+                            <th>Jeudi</th>
+                            <td id="TH1 " data-label="8h00-9h20"  class="td ">Développement d'objets <div class="drp-content">J-C0/05 <br>-TD- <br> LANOIX Arnaud</div></td>
+                            <td id="TH2" data-label="9h30-10h50" class="td">Stats Desciptives <div class="drp-content">J-C0/03 <br> -TD- <br>SIMONNEAU François </div></td>
+                            <td id="TH3" data-label="11h00-12h20" class="td">Développement Objets <div class="drp-content">J-C0/03 <br>-TD-  <br>LANOIX Arnaud </div></td>
+                            <td id="TH4" data-label="13h30-14h50"  class="td">PPP 2 <div class="drp-content">J-E1/14 <br>-TD-  <br>TOURNÈS Fabienne </div></td>
+                            <td id="TH5" data-label="15h00-16h20"   class="td">PPP 2 <div class="drp-content">J-E1/14 <br>-TD- <br>TOURNÈS Fabienne </div></td>
+                            <td id="TH6" data-label="16h30-17h50"  class="tp">Services réseau <div class="drp-content">J-C0/03 <br>-TP-  <br>REMM Jean-François </div></td>
+                        </tr>
+                        <tr>
+                            <th>Vendredi</th>
+                            <td id="F1 " data-label="8h00-9h20"  class="ds ">Stats Desciptives <div class="drp-content"> J-E1/14 <br>-DS-<br>QUINIOU Solen </div></td>
+                            <td id="F2" data-label="9h30-10h50" class="ds">Stats Desciptives <div class="drp-content">J-E1/14 <br> -DS- <br>QUINIOU Solen </div></td>
+                            <td id="F3" data-label="11h00-12h20" class="amphi">Développement d'apps avec IHM <div class="drp-content">J-Amphi 1 <br>-Promo-  <br>JACQUIN Christine </div></td>
+                            <td id="F4" data-label="13h30-14h50"  class=""> <br>  <br></td>
+                            <td id="F5" data-label="15h00-16h20"  > <br>  <br> </td>
+                            <td id="F6" data-label="16h30-17h50" > <br>  <br> </td>                           
+                        </tr>
+                    </tbody>
+                    </table>
 
         </section>
         
