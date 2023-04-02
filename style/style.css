@@ -466,10 +466,10 @@ td:hover .drp-content{
 /*j'aime les Pied */
 
 footer{
-    position: absolute;
+    position: relative;
     background-color:#000000;
     margin-top: 10px;
-    width: max-content;
+
     max-height: max-content;
     min-height: 155px;
     padding: 0px;
@@ -676,9 +676,84 @@ table, th, td {
   }
 
 
-
-
-
-
-
-
+  /**/
+  .menu-accordion {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .menu-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + .menu-accordion-header + .menu-accordion-content {
+    max-height: 100rem;
+    transition: max-height 0.5s ease-in;
+  }
+  
+  .menu-accordion-header::before {
+    content: '\25B6';
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  input[type="radio"]:checked + .menu-accordion-header::before {
+    content: '\25BC';
+  }
+  
+  /**/
+  .dropdownok {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btnok {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .dropdown-contentok {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 160px;
+    padding: 10px;
+  }
+  
+  .dropdown-contentok a {
+    color: #333;
+    display: block;
+    padding: 5px;
+  }
+  
+  .dropdown-contentok a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdownok:hover .dropdown-contentok {
+    display: block;
+  }
+  
