@@ -326,6 +326,14 @@ p{
 /*Emploi Du Temps */
 /*CHANGER LES COULEURS !!!!!*/
 
+#Grp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
 #compTable{
     display:table;
 }

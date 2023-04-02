@@ -129,24 +129,14 @@ section {
     gap:20px;
 }
 
-
+h2>#instapics{
+    margin: 10px;
+}
 #instaPics{
-    display: grid;
-    grid-template-areas: ". a ."
-                          "b . c";
+    width: 25vh;
 }
 
-#a{
-    grid-area: a;
-}
 
-#b{
-    grid-area: b;
-}
-
-#c{
-    grid-area: c;
-}
 
 
 .newsStudent div {
