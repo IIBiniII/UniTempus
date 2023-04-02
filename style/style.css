@@ -370,7 +370,8 @@ p{
 .button-edt{
     background-color: var(--Button-color);
     color: white;
-    padding: 15px 32px;
+    padding: 5px 10px;
+    margin:5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
