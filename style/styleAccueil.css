@@ -120,7 +120,33 @@ body{
 section {
     margin: 2%;
     
+    
 }
+
+#info{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+#instaPics{
+    display: grid;
+    grid-template-areas: ". a ."
+                          "b . c";
+}
+
+#a{
+    grid-area: a;
+}
+
+#b{
+    grid-area: b;
+}
+
+#c{
+    grid-area: c;
+}
+
 
 .newsStudent div {
     display: grid;
