@@ -247,12 +247,6 @@ li a{
     text-align: center;
   }
 
-.dropbtn {
-        
-}
-
-  
- 
 
   
 h1{
@@ -330,7 +324,7 @@ p{
 
 #Grp{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 
