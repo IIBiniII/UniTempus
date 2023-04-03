@@ -147,6 +147,42 @@ header{
     min-height: 50px;
 }
 
+nav{
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  max-width: 300px;
+  min-width: 100px;
+  min-height: 600px;
+  padding-top: 35px;
+  height: max-content;
+  /*min-height: 1000px;*/
+}
+
+
+
+.nav-link{
+  text-justify: auto;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+  
+}
+
+.nav-end{
+  max-height: max-content;
+  min-height: 0px;
+}
+
+
+.navbarText {
+  align-items: center;
+  text-align: center;
+  margin-bottom:1vh;
+}
+
 nav div{
     display: flex;
     flex-direction: column;
@@ -154,6 +190,9 @@ nav div{
 
 nav div img{
     width: 80px;
+}
+.invisible {
+  background-color: #D9D9D9;
 }
 
 .Button{
@@ -253,48 +292,11 @@ main{
     justify-content: start;
 }
 
-nav{
-    background-color: #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    margin-left: -10px;
-    max-width: 300px;
-    min-width: 100px;
-    height: 70vh;
-    min-height: 600px;
-    padding-top: 35px;
-    
-    /*min-height: 1000px;*/
-}
-
-
-section{
-    max-width: 100%;
-    min-width: 300px;    
-}
-
-.nav-link{
-    text-justify: auto;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-
-    
-}
-
-
-
-
-.navbarText {
-    align-items: center;
-    text-align: center;
-    margin-bottom:1vh;
-}
-
 
 /* Emploi Du temps*/
-section {
-    
+.section {
+  max-width: 100%;
+  min-width: 300px;    
     /*margin-top: 200px;*/
     margin-left: minmax(40px,200px);
     margin-right: minmax(40px,200px);
@@ -328,10 +330,18 @@ p{
 
 #Grp{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-bottom: 20px;
 
+  width: 100%;
+
+}
+
+.mainmarg{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 20px;
 }
 
 #compTable{
@@ -377,7 +387,7 @@ thead tr{
     display: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 99;
     max-height: 0;
 }
 
@@ -581,7 +591,7 @@ table, th, td {
     position: absolute;
     background-color: #f1f1f1;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 85;
   }
   
   .dropdown-content a {
@@ -659,7 +669,7 @@ table, th, td {
     position: fixed;
     top: 0;
     left: -190px;
-    z-index: 0;
+    z-index: 98;
     width: 150px;
     height: 100%;
     padding: 20px;
@@ -697,15 +707,19 @@ table, th, td {
   
   .menu-icon {
     position: absolute;
-    /*
-    top: 18px;
-    left: 30px;*/
+    
+    top: 80px;
+    left: 20px;
     font-size: 24px;
-    z-index: 1;
+    z-index: 100;
     transition: all 300ms ease-in-out;
   }
   
-  
+  svg {
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+  }
   
   /*-- The Magic --*/
   #menu-toggle:checked ~ .slideout-sidebar {
@@ -719,7 +733,20 @@ table, th, td {
   #menu-toggle:checked ~ .content-container {
     padding-left: 190px;
   }
-
+  .red-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.568);
+    border-radius: 50%;
+    margin-right: 10px; /* ajustez ce nombre selon vos besoins */
+  }
+  .red-dot:hover{
+    cursor: pointer;
+    background-color: #a71aa7b6;
+    content: '\25B6';
+  }
+  
   
   /* -- Media Queries -- */
 
@@ -830,7 +857,7 @@ table, th, td {
     .drp-content{
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+        z-index: 100;
         max-height: 0;
 
         width: max-content;
@@ -868,6 +895,14 @@ table, th, td {
     display: block;
 
   }
+  .f2{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
     
 
@@ -879,3 +914,4 @@ table, th, td {
     margin: 0;
     padding: 0;
   }
+}

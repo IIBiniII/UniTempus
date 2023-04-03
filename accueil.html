@@ -361,7 +361,7 @@
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://edt.univ-nantes.fr/iut_nantes/">
                         <div>
-                            <img class="sidebar_hypertext" src="Img/Horloge.svg">
+                            <img class="sidebar_hypertext" src="Img/Horloge.svg"/>
                         </div>
                         <div>
                             <p class="navbarText">Ancienne Version</p>
@@ -374,7 +374,7 @@
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://madoc.univ-nantes.fr/">
                         <div>
-                            <img class="sidebar_hypertext" src="Img/Livre.svg">
+                            <img class="sidebar_hypertext" src="Img/Livre.svg"/>
                         </div>
                         <div>
                             <p class="navbarText">Madoc</p>
@@ -386,7 +386,7 @@
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://nantilus.univ-nantes.fr">
                     <div>
-                        <img class="sidebar_hypertext" src="Img/LivreLoupe.svg">
+                        <img class="sidebar_hypertext" src="Img/LivreLoupe.svg"/>
                     </div>
 
                     <div>
@@ -400,7 +400,7 @@
                     
                     <a class="nav-link" href="https://uncloud.univ-nantes.fr/index.php/login">
                         <div>
-                            <img class="sidebar_hypertext" src="Img/Nuage.svg">
+                            <img class="sidebar_hypertext" src="Img/Nuage.svg"/>
                         </div>
                         <div>
                             <p class="navbarText">Un-cloud</p>
@@ -410,13 +410,16 @@
                 <div class="sidebar_hypertext"> 
                     <a class="nav-link" href="https://webmail-etu.univ-nantes.fr/src/login.php">
                         <div>
-                            <img class="sidebar_hypertext" src="Img/webmail.svg">
+                            <img class="sidebar_hypertext" src="Img/webmail.svg"/>
                         </div>
                         <div>
                             <p class="navbarText">Webmail</p>
                         </div>
                     </a>
                 </div>
+                <div class = "nav-end">
+                </div>
+
             </nav>
         </div>
 
@@ -432,8 +435,13 @@
                 <!--Barre nav gauche-->
                 <div class="visible">
                     <input type="checkbox" id="menu-toggle"/>
-                    <label for="menu-toggle" class="menu-icon visible"><i class="fas fa-bars"><svg href="Img/list.svg"></svg> </i></label>
-        
+                    <label for="menu-toggle" class="menu-icon visible">
+                        <span class="red-dot">
+                            
+                        </span>
+                        <svg href="Img\list.svg"></svg>
+                    </label>
+
                 
                     <div class="slideout-sidebar">
                         <ul>
@@ -509,8 +517,21 @@
 
                     </div>
                 </div>
+                <!--Fin barre nav gauche-->
+                <section class="timg" style="background-image: url(https://iutnantes.univ-nantes.fr/medias/photo/iut-1_1498061167669-png);">
+                    <div class="header__logo__">
+                        <a href="https://iutnantes.univ-nantes.fr" class="header__logo__lien" title="Retour à la page d'accueil">
+                            <img class="head_img" src="https://iutnantes.univ-nantes.fr/uas/iutn/LOGO/IUT-Nantes.png" alt="logo-IUT Nantes">
+                        </a>
+                    </div>
+                </section>
+
+
+                
+
+                
         <!--section-->
-        <section id="accSection">
+        <div class="marg" id="accSection ">
             <div id="info">
                 <div class="newsBox">
                     <div class="info">
@@ -536,7 +557,6 @@
                             <p class="newsText">#Fiersdenosétudiants - Lucille, entrepreneuse et étudiante à Polytech</p>
                         </div>
 
-                        <div>
                             <img src="Img/zoe.jpg">
                             <p class="newsText">
                                 #Fiersdenosétudiants - Zoé, élève ingénieure-architecte présidente d'une association
@@ -632,7 +652,7 @@
 
 
 
-        </section>
+        </div>
 
 
     </main>
